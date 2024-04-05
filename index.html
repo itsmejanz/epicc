@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output3.css" rel="stylesheet" />
+
+    <title>Epic 81 4.0</title>
+    <style>
+      body {
+        font-family: "Fredoka One", cursive;
+        margin: 0;
+        padding: 0;
+      }
+
+      .satu {
+        width: 100%;
+      }
+      .dua {
+        width: 100%;
+        margin-top: -20%;
+      }
+      .spacer {
+        margin-top: -20%;
+        z-index: 999;
+      }
+      .bg {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      .tiga {
+        position: relative;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .tiga img {
+        width: 100%;
+        display: block;
+        margin-top: -20%;
+      }
+
+      video {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        width: 80%;
+        height: auto;
+      }
+      .link-container {
+        position: absolute;
+        z-index: 999;
+        top: 65%;
+        width: 60%;
+        left: 50%;
+        transform: translate(-50%, -90%);
+      }
+      .glow-link {
+        text-decoration: none;
+        color: #e3e4e7;
+        padding: 5px;
+        transition: 0.3s;
+        text-shadow: 0 0 5px rgba(227, 228, 231, 0.6),
+          0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(145, 92, 182, 0.4);
+      }
+
+      /* Mobile devices (screens less than 600px wide) */
+      @media (max-width: 400) {
+        .glow-link {
+          font-size: 1em; /* Mobile */
+          .glow-link {
+            text-decoration: none;
+            color: #e3e4e7;
+            padding: 5px;
+            transition: 0.3s;
+            text-shadow: 0 0 5px rgba(227, 228, 231, 0.6),
+              0 0 10px rgba(255, 255, 255, 0.5),
+              0 0 20px rgba(145, 92, 182, 0.4);
+          }
+
+          /* Mobile devices (screens less than 600px wide) */
+          @media (min-width: 401px) and (max-width: 599px) {
+            .glow-link {
+              font-size: 1em; /* Mobile */
+            }
+          }
+
+          /* Medium-sized screens (600px to 899px wide) */
+          @media (min-width: 600px) and (max-width: 899px) {
+            .glow-link {
+              font-size: 2em; /* Medium */
+            }
+          }
+
+          /* Large screens (900px and larger) */
+          @media (min-width: 900px) {
+            .glow-link {
+              font-size: 2em; /* Large */
+            }
+          }
+        }
+      }
+
+      /* Medium-sized screens (600px to 899px wide) */
+      @media (min-width: 600px) and (max-width: 899px) {
+        .glow-link {
+          font-size: 3em; /* Medium */
+        }
+      }
+
+      /* Large screens (900px and larger) */
+      @media (min-width: 900px) {
+        .glow-link {
+          font-size: 4em; /* Large */
+        }
+      }
+
+      .glow-link:hover,
+      .glow-link:focus {
+        color: #e3e4e7;
+        text-shadow: 0 0 5px rgba(145, 92, 182, 0.9),
+          0 0 10px rgba(145, 92, 182, 0.8), 0 0 15px rgba(145, 92, 182, 0.7),
+          0 0 20px rgba(145, 92, 182, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="bg-white py-3 absolute w-full top-0 left-0 flex items-center z-[9999]"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-primary block py-0"
+              ><img src="logo.webp" class="h-12" />
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              alt="button-menu"
+              name="hamburger"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="absolute py-3 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none hidden"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href=""
+                    class="text-base text-dark py-2 lg:py-1 mx-8 flex group-hover:text-primary group-hover:font-medium"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="pendaftaran"
+                    class="text-base text-dark py-2 lg:py-1 mx-8 flex group-hover:text-primary group-hover:font-medium"
+                    >Registration</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="satu bg">
+      <picture>
+        <source media="(max-width: 400px)" srcset="1.webp" />
+        <img src="1.webp" width="100%" alt="" />
+      </picture>
+    </div>
+    <div class="spacer bg">
+      <img src="batas.webp" width="100%" alt="" />
+    </div>
+    <div class="dua bg">
+      <img src="2.webp" width="100%" alt="" />
+    </div>
+    <div class="tiga bg">
+      <picture>
+        <source media="(max-width: 400px)" srcset="3.webp" />
+        <img
+          src="3.webp"
+          style="position: relative; z-index: 5"
+          width="100%"
+          alt=""
+        />
+      </picture>
+
+      <video controls>
+        <source
+          src="file.mp4"
+          style="position: relative; z-index: 1000"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <br>
+      <div class="link-container">
+        <div class="row">
+            <a href="link-for-fifa" class="glow-link">FIFA •</a>
+            <a href="link-for-solo-vokal" class="glow-link">SOLO VOKAL •</a> 
+            <a href="link-for-elysile" class="glow-link">ELYSILE •</a>
+        </div>
+        <div class="row">
+            <a href="link-for-elysile" class="glow-link">BAND •</a>
+            <a href="link-for-elysile" class="glow-link">DESAIN POSTER •</a>
+            <a href="link-for-elysile" class="glow-link">RATOH JAROE •</a>
+        </div>
+        <div class="row">
+            <a href="link-for-elysile" class="glow-link">FOTOGRAFI •</a>
+            <a href="link-for-elysile" class="glow-link">ESCOLATE •</a>
+            <a href="link-for-elysile" class="glow-link">BASKET •</a>
+        </div>
+        <div class="row">
+            <a href="link-for-elysile" class="glow-link">TRIVIATLON BIBLE •</a>
+            <a href="link-for-elysile" class="glow-link">MOBILE LEGEND •</a>
+        </div>
+        <div class="row">
+            <!-- Tautan ke-3 di baris ke-5, jika diperlukan -->
+        </div>
+    </div>
+    
+    
+       
+      </div>
+    </div>
+    <footer
+      style="text-align: center; background-color: #f5f5f5; padding: 20px"
+    >
+    <h2 style="font-size: 36px;">EPIC 4.0</h2>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <a href="LINK_TO_INSTAGRAM" target="_blank" style="margin-right: 10px;">
+          <img src="ig.webp" alt="Instagram" style="height: 50px;">
+        </a>
+        <a href="LINK_TO_TIKTOK" target="_blank">
+          <img src="tiktok.webp" alt="TikTok" style="height: 50px;">
+        </a>
+      </div>
+      
+      <p class="font_8 wixui-rich-text__text" style="text-align:center; font-size:16px;">Ekapaksi Cup 81 4.0 By SMAN 81 Jakarta</p>
+      </div>
+    </footer>
+  </body>
+  <script src="script4.js"></script>
+</html>
